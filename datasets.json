@@ -1,4 +1,1565 @@
 {
     "license": "CC BY-SA 4.0",
-    "datasets": []
+    "datasets": [
+        {
+            "id": "vpn_ip_v1",
+            "name": "VPN IP",
+            "summary": "IP ranges observed as VPN infrastructure.",
+            "folder": "vpn-ip",
+            "formats": [
+                "csvgz",
+                "mmdb"
+            ],
+            "open": false,
+            "update_frequency": "daily",
+            "docs": "https://docs.vpndetection.io/database/vpn-ip/vpn-ip",
+            "page": "https://vpndetection.io/databases/vpn-ip",
+            "sample": {
+                "cut": "2026-11-17",
+                "rows": 100,
+                "files": {
+                    "csv": "vpn-ip/vpn_ip_v1.sample.csv",
+                    "csvgz": "vpn-ip/vpn_ip_v1.sample.csv.gz",
+                    "mmdb": "vpn-ip/vpn_ip_v1.sample.mmdb"
+                }
+            },
+            "database": {
+                "entries": 14895525,
+                "size": {
+                    "csvgz": 107835621,
+                    "mmdb": 90969684
+                }
+            },
+            "columns": {
+                "csvgz": [
+                    {
+                        "name": "start_ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "end_ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "confidence",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    }
+                ],
+                "mmdb": [
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "confidence",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "vpn_ip_extended_v1",
+            "name": "VPN IP Extended",
+            "summary": "VPN IP ranges with provider attribution, confidence and detection method.",
+            "folder": "vpn-ip-extended",
+            "formats": [
+                "csvgz",
+                "mmdb"
+            ],
+            "open": false,
+            "update_frequency": "daily",
+            "docs": "https://docs.vpndetection.io/database/vpn-ip/vpn-ip-extended",
+            "page": "https://vpndetection.io/databases/vpn-ip-extended",
+            "sample": {
+                "cut": "2026-11-17",
+                "rows": 100,
+                "files": {
+                    "csv": "vpn-ip-extended/vpn_ip_extended_v1.sample.csv",
+                    "csvgz": "vpn-ip-extended/vpn_ip_extended_v1.sample.csv.gz",
+                    "mmdb": "vpn-ip-extended/vpn_ip_extended_v1.sample.mmdb"
+                }
+            },
+            "database": {
+                "entries": 15516836,
+                "size": {
+                    "csvgz": 116623631,
+                    "mmdb": 146327520
+                }
+            },
+            "columns": {
+                "csvgz": [
+                    {
+                        "name": "start_ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "end_ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "method",
+                        "type": "string"
+                    },
+                    {
+                        "name": "confidence",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    }
+                ],
+                "mmdb": [
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "method",
+                        "type": "string"
+                    },
+                    {
+                        "name": "confidence",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "hosting_ip_v1",
+            "name": "Hosting IP",
+            "summary": "IP ranges belonging to hosting and cloud providers.",
+            "folder": "hosting-ip",
+            "formats": [
+                "csvgz",
+                "mmdb"
+            ],
+            "open": false,
+            "update_frequency": "daily",
+            "docs": "https://docs.vpndetection.io/database/hosting-ip/hosting-ip",
+            "page": "https://vpndetection.io/databases/hosting-ip",
+            "sample": {
+                "cut": "2026-11-17",
+                "rows": 100,
+                "files": {
+                    "csv": "hosting-ip/hosting_ip_v1.sample.csv",
+                    "csvgz": "hosting-ip/hosting_ip_v1.sample.csv.gz",
+                    "mmdb": "hosting-ip/hosting_ip_v1.sample.mmdb"
+                }
+            },
+            "database": {
+                "entries": 483920,
+                "size": {
+                    "csvgz": 3444592,
+                    "mmdb": 5955814
+                }
+            },
+            "columns": {
+                "csvgz": [
+                    {
+                        "name": "start_ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "end_ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "confidence",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    }
+                ],
+                "mmdb": [
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "confidence",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "tor_ip_v1",
+            "name": "Tor IP",
+            "summary": "Tor node IP ranges.",
+            "folder": "tor-ip",
+            "formats": [
+                "csvgz",
+                "mmdb"
+            ],
+            "open": true,
+            "update_frequency": "daily",
+            "docs": "https://docs.vpndetection.io/database/tor-ip",
+            "page": "https://vpndetection.io/databases/tor-ip",
+            "sample": {
+                "cut": "2026-11-17",
+                "rows": 100,
+                "files": {
+                    "csv": "tor-ip/tor_ip_v1.sample.csv",
+                    "csvgz": "tor-ip/tor_ip_v1.sample.csv.gz",
+                    "mmdb": "tor-ip/tor_ip_v1.sample.mmdb"
+                }
+            },
+            "database": {
+                "entries": 13825,
+                "size": {
+                    "csvgz": 116012,
+                    "mmdb": 958356
+                }
+            },
+            "columns": {
+                "csvgz": [
+                    {
+                        "name": "start_ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "end_ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "confidence",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    }
+                ],
+                "mmdb": [
+                    {
+                        "name": "confidence",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "relay_ip_v1",
+            "name": "Relay IP",
+            "summary": "IP ranges of privacy relays, such as iCloud Private Relay, and of enterprise web gateways, such as Zscaler.",
+            "folder": "relay-ip",
+            "formats": [
+                "csvgz",
+                "mmdb"
+            ],
+            "open": true,
+            "update_frequency": "daily",
+            "docs": "https://docs.vpndetection.io/database/relay-ip/relay-ip",
+            "page": "https://vpndetection.io/databases/relay-ip",
+            "sample": {
+                "cut": "2026-11-17",
+                "rows": 100,
+                "files": {
+                    "csv": "relay-ip/relay_ip_v1.sample.csv",
+                    "csvgz": "relay-ip/relay_ip_v1.sample.csv.gz",
+                    "mmdb": "relay-ip/relay_ip_v1.sample.mmdb"
+                }
+            },
+            "database": {
+                "entries": 176223,
+                "size": {
+                    "csvgz": 1186493,
+                    "mmdb": 1107705
+                }
+            },
+            "columns": {
+                "csvgz": [
+                    {
+                        "name": "start_ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "end_ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "confidence",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    }
+                ],
+                "mmdb": [
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "confidence",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cdn_ip_v1",
+            "name": "CDN IP",
+            "summary": "IP ranges operated by content delivery networks.",
+            "folder": "cdn-ip",
+            "formats": [
+                "csvgz",
+                "mmdb"
+            ],
+            "open": false,
+            "update_frequency": "daily",
+            "docs": "https://docs.vpndetection.io/database/cdn-ip/cdn-ip",
+            "page": "https://vpndetection.io/databases/cdn-ip",
+            "sample": {
+                "cut": "2026-11-17",
+                "rows": 100,
+                "files": {
+                    "csv": "cdn-ip/cdn_ip_v1.sample.csv",
+                    "csvgz": "cdn-ip/cdn_ip_v1.sample.csv.gz",
+                    "mmdb": "cdn-ip/cdn_ip_v1.sample.mmdb"
+                }
+            },
+            "database": {
+                "entries": 153406,
+                "size": {
+                    "csvgz": 982968,
+                    "mmdb": 1169629
+                }
+            },
+            "columns": {
+                "csvgz": [
+                    {
+                        "name": "start_ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "end_ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "confidence",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    }
+                ],
+                "mmdb": [
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "confidence",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "dcproxy_ip_1d_v1",
+            "name": "Datacenter Proxy IP 1d",
+            "summary": "Datacenter-hosted proxy IPs seen in the last 24 hours, with provider attribution.",
+            "folder": "dcproxy-ip-1d",
+            "formats": [
+                "csvgz",
+                "mmdb"
+            ],
+            "open": false,
+            "update_frequency": "daily",
+            "docs": "https://docs.vpndetection.io/database/dcproxy-ip/dcproxy-ip-1d",
+            "page": "https://vpndetection.io/databases/datacenter-proxy-ip",
+            "sample": {
+                "cut": "2026-11-17",
+                "rows": 100,
+                "files": {
+                    "csv": "dcproxy-ip-1d/dcproxy_ip_1d_v1.sample.csv",
+                    "csvgz": "dcproxy-ip-1d/dcproxy_ip_1d_v1.sample.csv.gz",
+                    "mmdb": "dcproxy-ip-1d/dcproxy_ip_1d_v1.sample.mmdb"
+                }
+            },
+            "database": {
+                "entries": 682213,
+                "size": {
+                    "csvgz": 1966186,
+                    "mmdb": 709170
+                }
+            },
+            "columns": {
+                "csvgz": [
+                    {
+                        "name": "ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "first_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "hits",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "hits_days_pct",
+                        "type": "float"
+                    },
+                    {
+                        "name": "providers_num",
+                        "type": "integer"
+                    }
+                ],
+                "mmdb": [
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "first_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "hits",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "hits_days_pct",
+                        "type": "float"
+                    },
+                    {
+                        "name": "providers_num",
+                        "type": "integer"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "dcproxy_ip_7d_v1",
+            "name": "Datacenter Proxy IP 7d",
+            "summary": "Datacenter-hosted proxy IPs seen in the last 7 days, with provider attribution.",
+            "folder": "dcproxy-ip-7d",
+            "formats": [
+                "csvgz",
+                "mmdb"
+            ],
+            "open": false,
+            "update_frequency": "daily",
+            "docs": "https://docs.vpndetection.io/database/dcproxy-ip/dcproxy-ip-7d",
+            "page": "https://vpndetection.io/databases/datacenter-proxy-ip",
+            "sample": {
+                "cut": "2026-11-17",
+                "rows": 100,
+                "files": {
+                    "csv": "dcproxy-ip-7d/dcproxy_ip_7d_v1.sample.csv",
+                    "csvgz": "dcproxy-ip-7d/dcproxy_ip_7d_v1.sample.csv.gz",
+                    "mmdb": "dcproxy-ip-7d/dcproxy_ip_7d_v1.sample.mmdb"
+                }
+            },
+            "database": {
+                "entries": 767914,
+                "size": {
+                    "csvgz": 2579458,
+                    "mmdb": 2429039
+                }
+            },
+            "columns": {
+                "csvgz": [
+                    {
+                        "name": "ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "first_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "hits",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "hits_days_pct",
+                        "type": "float"
+                    },
+                    {
+                        "name": "providers_num",
+                        "type": "integer"
+                    }
+                ],
+                "mmdb": [
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "first_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "hits",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "hits_days_pct",
+                        "type": "float"
+                    },
+                    {
+                        "name": "providers_num",
+                        "type": "integer"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "dcproxy_ip_14d_v1",
+            "name": "Datacenter Proxy IP 14d",
+            "summary": "Datacenter-hosted proxy IPs seen in the last 14 days, with provider attribution.",
+            "folder": "dcproxy-ip-14d",
+            "formats": [
+                "csvgz",
+                "mmdb"
+            ],
+            "open": false,
+            "update_frequency": "daily",
+            "docs": "https://docs.vpndetection.io/database/dcproxy-ip/dcproxy-ip-14d",
+            "page": "https://vpndetection.io/databases/datacenter-proxy-ip",
+            "sample": {
+                "cut": "2026-11-17",
+                "rows": 100,
+                "files": {
+                    "csv": "dcproxy-ip-14d/dcproxy_ip_14d_v1.sample.csv",
+                    "csvgz": "dcproxy-ip-14d/dcproxy_ip_14d_v1.sample.csv.gz",
+                    "mmdb": "dcproxy-ip-14d/dcproxy_ip_14d_v1.sample.mmdb"
+                }
+            },
+            "database": {
+                "entries": 866443,
+                "size": {
+                    "csvgz": 3226500,
+                    "mmdb": 3611771
+                }
+            },
+            "columns": {
+                "csvgz": [
+                    {
+                        "name": "ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "first_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "hits",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "hits_days_pct",
+                        "type": "float"
+                    },
+                    {
+                        "name": "providers_num",
+                        "type": "integer"
+                    }
+                ],
+                "mmdb": [
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "first_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "hits",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "hits_days_pct",
+                        "type": "float"
+                    },
+                    {
+                        "name": "providers_num",
+                        "type": "integer"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "dcproxy_ip_30d_v1",
+            "name": "Datacenter Proxy IP 30d",
+            "summary": "Datacenter-hosted proxy IPs seen in the last 30 days, with provider attribution.",
+            "folder": "dcproxy-ip-30d",
+            "formats": [
+                "csvgz",
+                "mmdb"
+            ],
+            "open": false,
+            "update_frequency": "daily",
+            "docs": "https://docs.vpndetection.io/database/dcproxy-ip/dcproxy-ip-30d",
+            "page": "https://vpndetection.io/databases/datacenter-proxy-ip",
+            "sample": {
+                "cut": "2026-11-17",
+                "rows": 100,
+                "files": {
+                    "csv": "dcproxy-ip-30d/dcproxy_ip_30d_v1.sample.csv",
+                    "csvgz": "dcproxy-ip-30d/dcproxy_ip_30d_v1.sample.csv.gz",
+                    "mmdb": "dcproxy-ip-30d/dcproxy_ip_30d_v1.sample.mmdb"
+                }
+            },
+            "database": {
+                "entries": 1078648,
+                "size": {
+                    "csvgz": 5103039,
+                    "mmdb": 8646120
+                }
+            },
+            "columns": {
+                "csvgz": [
+                    {
+                        "name": "ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "first_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "hits",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "hits_days_pct",
+                        "type": "float"
+                    },
+                    {
+                        "name": "providers_num",
+                        "type": "integer"
+                    }
+                ],
+                "mmdb": [
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "first_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "hits",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "hits_days_pct",
+                        "type": "float"
+                    },
+                    {
+                        "name": "providers_num",
+                        "type": "integer"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "dcproxy_ip_60d_v1",
+            "name": "Datacenter Proxy IP 60d",
+            "summary": "Datacenter-hosted proxy IPs seen in the last 60 days, with provider attribution.",
+            "folder": "dcproxy-ip-60d",
+            "formats": [
+                "csvgz",
+                "mmdb"
+            ],
+            "open": false,
+            "update_frequency": "daily",
+            "docs": "https://docs.vpndetection.io/database/dcproxy-ip/dcproxy-ip-60d",
+            "page": "https://vpndetection.io/databases/datacenter-proxy-ip",
+            "sample": {
+                "cut": "2026-11-17",
+                "rows": 100,
+                "files": {
+                    "csv": "dcproxy-ip-60d/dcproxy_ip_60d_v1.sample.csv",
+                    "csvgz": "dcproxy-ip-60d/dcproxy_ip_60d_v1.sample.csv.gz",
+                    "mmdb": "dcproxy-ip-60d/dcproxy_ip_60d_v1.sample.mmdb"
+                }
+            },
+            "database": {
+                "entries": 1277615,
+                "size": {
+                    "csvgz": 6903131,
+                    "mmdb": 15603596
+                }
+            },
+            "columns": {
+                "csvgz": [
+                    {
+                        "name": "ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "first_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "hits",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "hits_days_pct",
+                        "type": "float"
+                    },
+                    {
+                        "name": "providers_num",
+                        "type": "integer"
+                    }
+                ],
+                "mmdb": [
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "first_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "hits",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "hits_days_pct",
+                        "type": "float"
+                    },
+                    {
+                        "name": "providers_num",
+                        "type": "integer"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "dcproxy_ip_90d_v1",
+            "name": "Datacenter Proxy IP 90d",
+            "summary": "Datacenter-hosted proxy IPs seen in the last 90 days, with provider attribution.",
+            "folder": "dcproxy-ip-90d",
+            "formats": [
+                "csvgz",
+                "mmdb"
+            ],
+            "open": false,
+            "update_frequency": "daily",
+            "docs": "https://docs.vpndetection.io/database/dcproxy-ip/dcproxy-ip-90d",
+            "page": "https://vpndetection.io/databases/datacenter-proxy-ip",
+            "sample": {
+                "cut": "2026-11-17",
+                "rows": 100,
+                "files": {
+                    "csv": "dcproxy-ip-90d/dcproxy_ip_90d_v1.sample.csv",
+                    "csvgz": "dcproxy-ip-90d/dcproxy_ip_90d_v1.sample.csv.gz",
+                    "mmdb": "dcproxy-ip-90d/dcproxy_ip_90d_v1.sample.mmdb"
+                }
+            },
+            "database": {
+                "entries": 1380411,
+                "size": {
+                    "csvgz": 7864673,
+                    "mmdb": 20729727
+                }
+            },
+            "columns": {
+                "csvgz": [
+                    {
+                        "name": "ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "first_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "hits",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "hits_days_pct",
+                        "type": "float"
+                    },
+                    {
+                        "name": "providers_num",
+                        "type": "integer"
+                    }
+                ],
+                "mmdb": [
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "first_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "hits",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "hits_days_pct",
+                        "type": "float"
+                    },
+                    {
+                        "name": "providers_num",
+                        "type": "integer"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pubproxy_ip_1d_v1",
+            "name": "Public Proxy IP 1d",
+            "summary": "Addresses where public proxies listened or their traffic exited in the last 24 hours, each flagged entry, exit or both.",
+            "folder": "pubproxy-ip-1d",
+            "formats": [
+                "csvgz",
+                "mmdb"
+            ],
+            "open": false,
+            "update_frequency": "daily",
+            "docs": "https://docs.vpndetection.io/database/pubproxy-ip/pubproxy-ip-1d",
+            "page": "https://vpndetection.io/databases/public-proxy-ip",
+            "sample": {
+                "cut": "2026-11-17",
+                "rows": 100,
+                "files": {
+                    "csv": "pubproxy-ip-1d/pubproxy_ip_1d_v1.sample.csv",
+                    "csvgz": "pubproxy-ip-1d/pubproxy_ip_1d_v1.sample.csv.gz",
+                    "mmdb": "pubproxy-ip-1d/pubproxy_ip_1d_v1.sample.mmdb"
+                }
+            },
+            "database": {
+                "entries": 16501,
+                "size": {
+                    "csvgz": 120484,
+                    "mmdb": 897949
+                }
+            },
+            "columns": {
+                "csvgz": [
+                    {
+                        "name": "ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "exit",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "entry",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "protocols",
+                        "type": "string"
+                    },
+                    {
+                        "name": "num_ports",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "num_proxies",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "country",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_usable",
+                        "type": "date"
+                    }
+                ],
+                "mmdb": [
+                    {
+                        "name": "exit",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "entry",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "protocols",
+                        "type": "string"
+                    },
+                    {
+                        "name": "num_ports",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "num_proxies",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "country",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_usable",
+                        "type": "date"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pubproxy_ip_7d_v1",
+            "name": "Public Proxy IP 7d",
+            "summary": "Addresses where public proxies listened or their traffic exited in the last 7 days, each flagged entry, exit or both.",
+            "folder": "pubproxy-ip-7d",
+            "formats": [
+                "csvgz",
+                "mmdb"
+            ],
+            "open": false,
+            "update_frequency": "daily",
+            "docs": "https://docs.vpndetection.io/database/pubproxy-ip/pubproxy-ip-7d",
+            "page": "https://vpndetection.io/databases/public-proxy-ip",
+            "sample": {
+                "cut": "2026-11-17",
+                "rows": 100,
+                "files": {
+                    "csv": "pubproxy-ip-7d/pubproxy_ip_7d_v1.sample.csv",
+                    "csvgz": "pubproxy-ip-7d/pubproxy_ip_7d_v1.sample.csv.gz",
+                    "mmdb": "pubproxy-ip-7d/pubproxy_ip_7d_v1.sample.mmdb"
+                }
+            },
+            "database": {
+                "entries": 23740,
+                "size": {
+                    "csvgz": 193273,
+                    "mmdb": 1673983
+                }
+            },
+            "columns": {
+                "csvgz": [
+                    {
+                        "name": "ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "exit",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "entry",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "protocols",
+                        "type": "string"
+                    },
+                    {
+                        "name": "num_ports",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "num_proxies",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "country",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_usable",
+                        "type": "date"
+                    }
+                ],
+                "mmdb": [
+                    {
+                        "name": "exit",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "entry",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "protocols",
+                        "type": "string"
+                    },
+                    {
+                        "name": "num_ports",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "num_proxies",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "country",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_usable",
+                        "type": "date"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pubproxy_ip_14d_v1",
+            "name": "Public Proxy IP 14d",
+            "summary": "Addresses where public proxies listened or their traffic exited in the last 14 days, each flagged entry, exit or both.",
+            "folder": "pubproxy-ip-14d",
+            "formats": [
+                "csvgz",
+                "mmdb"
+            ],
+            "open": false,
+            "update_frequency": "daily",
+            "docs": "https://docs.vpndetection.io/database/pubproxy-ip/pubproxy-ip-14d",
+            "page": "https://vpndetection.io/databases/public-proxy-ip",
+            "sample": {
+                "cut": "2026-11-17",
+                "rows": 100,
+                "files": {
+                    "csv": "pubproxy-ip-14d/pubproxy_ip_14d_v1.sample.csv",
+                    "csvgz": "pubproxy-ip-14d/pubproxy_ip_14d_v1.sample.csv.gz",
+                    "mmdb": "pubproxy-ip-14d/pubproxy_ip_14d_v1.sample.mmdb"
+                }
+            },
+            "database": {
+                "entries": 28628,
+                "size": {
+                    "csvgz": 246255,
+                    "mmdb": 2285426
+                }
+            },
+            "columns": {
+                "csvgz": [
+                    {
+                        "name": "ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "exit",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "entry",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "protocols",
+                        "type": "string"
+                    },
+                    {
+                        "name": "num_ports",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "num_proxies",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "country",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_usable",
+                        "type": "date"
+                    }
+                ],
+                "mmdb": [
+                    {
+                        "name": "exit",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "entry",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "protocols",
+                        "type": "string"
+                    },
+                    {
+                        "name": "num_ports",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "num_proxies",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "country",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_usable",
+                        "type": "date"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pubproxy_ip_30d_v1",
+            "name": "Public Proxy IP 30d",
+            "summary": "Addresses where public proxies listened or their traffic exited in the last 30 days, each flagged entry, exit or both.",
+            "folder": "pubproxy-ip-30d",
+            "formats": [
+                "csvgz",
+                "mmdb"
+            ],
+            "open": false,
+            "update_frequency": "daily",
+            "docs": "https://docs.vpndetection.io/database/pubproxy-ip/pubproxy-ip-30d",
+            "page": "https://vpndetection.io/databases/public-proxy-ip",
+            "sample": {
+                "cut": "2026-11-17",
+                "rows": 100,
+                "files": {
+                    "csv": "pubproxy-ip-30d/pubproxy_ip_30d_v1.sample.csv",
+                    "csvgz": "pubproxy-ip-30d/pubproxy_ip_30d_v1.sample.csv.gz",
+                    "mmdb": "pubproxy-ip-30d/pubproxy_ip_30d_v1.sample.mmdb"
+                }
+            },
+            "database": {
+                "entries": 38592,
+                "size": {
+                    "csvgz": 354042,
+                    "mmdb": 3468548
+                }
+            },
+            "columns": {
+                "csvgz": [
+                    {
+                        "name": "ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "exit",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "entry",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "protocols",
+                        "type": "string"
+                    },
+                    {
+                        "name": "num_ports",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "num_proxies",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "country",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_usable",
+                        "type": "date"
+                    }
+                ],
+                "mmdb": [
+                    {
+                        "name": "exit",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "entry",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "protocols",
+                        "type": "string"
+                    },
+                    {
+                        "name": "num_ports",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "num_proxies",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "country",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_usable",
+                        "type": "date"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pubproxy_ip_60d_v1",
+            "name": "Public Proxy IP 60d",
+            "summary": "Addresses where public proxies listened or their traffic exited in the last 60 days, each flagged entry, exit or both.",
+            "folder": "pubproxy-ip-60d",
+            "formats": [
+                "csvgz",
+                "mmdb"
+            ],
+            "open": false,
+            "update_frequency": "daily",
+            "docs": "https://docs.vpndetection.io/database/pubproxy-ip/pubproxy-ip-60d",
+            "page": "https://vpndetection.io/databases/public-proxy-ip",
+            "sample": {
+                "cut": "2026-11-17",
+                "rows": 100,
+                "files": {
+                    "csv": "pubproxy-ip-60d/pubproxy_ip_60d_v1.sample.csv",
+                    "csvgz": "pubproxy-ip-60d/pubproxy_ip_60d_v1.sample.csv.gz",
+                    "mmdb": "pubproxy-ip-60d/pubproxy_ip_60d_v1.sample.mmdb"
+                }
+            },
+            "database": {
+                "entries": 40827,
+                "size": {
+                    "csvgz": 376942,
+                    "mmdb": 3624869
+                }
+            },
+            "columns": {
+                "csvgz": [
+                    {
+                        "name": "ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "exit",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "entry",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "protocols",
+                        "type": "string"
+                    },
+                    {
+                        "name": "num_ports",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "num_proxies",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "country",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_usable",
+                        "type": "date"
+                    }
+                ],
+                "mmdb": [
+                    {
+                        "name": "exit",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "entry",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "protocols",
+                        "type": "string"
+                    },
+                    {
+                        "name": "num_ports",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "num_proxies",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "country",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_usable",
+                        "type": "date"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pubproxy_ip_90d_v1",
+            "name": "Public Proxy IP 90d",
+            "summary": "Addresses where public proxies listened or their traffic exited in the last 90 days, each flagged entry, exit or both.",
+            "folder": "pubproxy-ip-90d",
+            "formats": [
+                "csvgz",
+                "mmdb"
+            ],
+            "open": false,
+            "update_frequency": "daily",
+            "docs": "https://docs.vpndetection.io/database/pubproxy-ip/pubproxy-ip-90d",
+            "page": "https://vpndetection.io/databases/public-proxy-ip",
+            "sample": {
+                "cut": "2026-11-17",
+                "rows": 100,
+                "files": {
+                    "csv": "pubproxy-ip-90d/pubproxy_ip_90d_v1.sample.csv",
+                    "csvgz": "pubproxy-ip-90d/pubproxy_ip_90d_v1.sample.csv.gz",
+                    "mmdb": "pubproxy-ip-90d/pubproxy_ip_90d_v1.sample.mmdb"
+                }
+            },
+            "database": {
+                "entries": 43378,
+                "size": {
+                    "csvgz": 400075,
+                    "mmdb": 3781948
+                }
+            },
+            "columns": {
+                "csvgz": [
+                    {
+                        "name": "ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "exit",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "entry",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "protocols",
+                        "type": "string"
+                    },
+                    {
+                        "name": "num_ports",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "num_proxies",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "country",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_usable",
+                        "type": "date"
+                    }
+                ],
+                "mmdb": [
+                    {
+                        "name": "exit",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "entry",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "protocols",
+                        "type": "string"
+                    },
+                    {
+                        "name": "num_ports",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "num_proxies",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "country",
+                        "type": "string"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_usable",
+                        "type": "date"
+                    }
+                ]
+            }
+        }
+    ]
 }

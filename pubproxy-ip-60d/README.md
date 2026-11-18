@@ -77,8 +77,8 @@ Each record is looked up by IP address and holds:
 The full database needs a license: [request an evaluation](https://vpndetection.io/contact?purpose=evaluation&subject=Public+Proxy+IP+Database+evaluation&products=Public+Proxy+IP+Database&utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=pubproxy-ip-60d) to test the whole file first. With a licensed API key:
 
 ```bash
-curl -L -o pubproxy_ip_60d_v1.csv.gz 'https://api.vpndetection.io/api/v1/database/download?id=pubproxy_ip_60d_v1&format=csvgz&apikey=$APIKEY'
-curl -L -o pubproxy_ip_60d_v1.mmdb 'https://api.vpndetection.io/api/v1/database/download?id=pubproxy_ip_60d_v1&format=mmdb&apikey=$APIKEY'
+curl -L -o pubproxy_ip_60d_v1.csv.gz "https://api.vpndetection.io/api/v1/database/download?id=pubproxy_ip_60d_v1&format=csvgz&apikey=$APIKEY"
+curl -L -o pubproxy_ip_60d_v1.mmdb "https://api.vpndetection.io/api/v1/database/download?id=pubproxy_ip_60d_v1&format=mmdb&apikey=$APIKEY"
 ```
 
 It's part of [Public Proxy IP](https://vpndetection.io/databases/public-proxy-ip?utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=pubproxy-ip-60d) on vpndetection.io.

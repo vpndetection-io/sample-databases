@@ -51,8 +51,8 @@ Each record is looked up by IP address and holds:
 Relay IP is an Open database, free under CC BY-SA 4.0 with a VPNDetection account: [sign up](https://vpndetection.io/signup?utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=relay-ip), then with your API key:
 
 ```bash
-curl -L -o relay_ip_v1.csv.gz 'https://api.vpndetection.io/api/v1/database/download?id=relay_ip_v1&format=csvgz&apikey=$APIKEY'
-curl -L -o relay_ip_v1.mmdb 'https://api.vpndetection.io/api/v1/database/download?id=relay_ip_v1&format=mmdb&apikey=$APIKEY'
+curl -L -o relay_ip_v1.csv.gz "https://api.vpndetection.io/api/v1/database/download?id=relay_ip_v1&format=csvgz&apikey=$APIKEY"
+curl -L -o relay_ip_v1.mmdb "https://api.vpndetection.io/api/v1/database/download?id=relay_ip_v1&format=mmdb&apikey=$APIKEY"
 ```
 
 Today's sample is on [its page](https://vpndetection.io/databases/relay-ip?utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=relay-ip), cut from the latest build.

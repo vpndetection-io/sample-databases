@@ -49,8 +49,8 @@ Each record is looked up by IP address and holds:
 The full database needs a license: [request an evaluation](https://vpndetection.io/contact?purpose=evaluation&subject=Hosting+IP+Database+evaluation&products=Hosting+IP+Database&utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=hosting-ip) to test the whole file first. With a licensed API key:
 
 ```bash
-curl -L -o hosting_ip_v1.csv.gz 'https://api.vpndetection.io/api/v1/database/download?id=hosting_ip_v1&format=csvgz&apikey=$APIKEY'
-curl -L -o hosting_ip_v1.mmdb 'https://api.vpndetection.io/api/v1/database/download?id=hosting_ip_v1&format=mmdb&apikey=$APIKEY'
+curl -L -o hosting_ip_v1.csv.gz "https://api.vpndetection.io/api/v1/database/download?id=hosting_ip_v1&format=csvgz&apikey=$APIKEY"
+curl -L -o hosting_ip_v1.mmdb "https://api.vpndetection.io/api/v1/database/download?id=hosting_ip_v1&format=mmdb&apikey=$APIKEY"
 ```
 
 Today's sample is on [its page](https://vpndetection.io/databases/hosting-ip?utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=hosting-ip), cut from the latest build.

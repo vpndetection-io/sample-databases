@@ -1,6 +1,6 @@
 # [<img src="https://s3.vpndetection.io/vpndetection-public/brand/mark.svg" alt="VPNDetection" height="28"/>](https://vpndetection.io/?utm_source=github&utm_medium=referral&utm_campaign=sample-databases) VPNDetection Sample Databases
 
-100 real rows of every VPNDetection database that has a sample, in the formats the full databases ship in, with every field documented. Each sample is cut from that database's own build, so its rows, columns and quoting are the full file's. [Residential Proxy IP](https://vpndetection.io/contact?purpose=sample&subject=Residential+Proxy+IP+Database+sample&products=Residential+Proxy+IP+Database&utm_source=github&utm_medium=referral&utm_campaign=sample-databases) and [Mobile Proxy IP](https://vpndetection.io/contact?purpose=sample&subject=Mobile+Proxy+IP+Database+sample&products=Mobile+Proxy+IP+Database&utm_source=github&utm_medium=referral&utm_campaign=sample-databases) have no sample here: ask us for one.
+100 real rows of every VPNDetection database that has a sample, in the formats the full databases ship in, with every field documented. Each sample is cut from that database's own build, so its rows, columns and quoting are the full file's.
 
 ## Databases
 

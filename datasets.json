@@ -1560,6 +1560,114 @@
                     }
                 ]
             }
+        },
+        {
+            "id": "bot_ip_v1",
+            "name": "Bot IP",
+            "summary": "IP ranges bots use, from search and AI crawlers to monitors, scanners and webhook senders, each with its operator, its bots, what they do and whether the operator vouches for the address.",
+            "folder": "bot-ip",
+            "formats": [
+                "csvgz",
+                "mmdb"
+            ],
+            "open": false,
+            "update_frequency": "daily",
+            "docs": "https://docs.vpndetection.io/database/bot-ip/bot-ip",
+            "page": "https://vpndetection.io/databases/bot-ip",
+            "sample": {
+                "cut": "2026-11-21",
+                "rows": 100,
+                "files": {
+                    "csv": "bot-ip/bot_ip_v1.sample.csv",
+                    "csvgz": "bot-ip/bot_ip_v1.sample.csv.gz",
+                    "mmdb": "bot-ip/bot_ip_v1.sample.mmdb"
+                }
+            },
+            "database": {
+                "entries": 41660,
+                "size": {
+                    "csvgz": 339372,
+                    "mmdb": 799683
+                }
+            },
+            "columns": {
+                "csvgz": [
+                    {
+                        "name": "start_ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "end_ip",
+                        "type": "ipaddress"
+                    },
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "agents",
+                        "type": "string"
+                    },
+                    {
+                        "name": "categories",
+                        "type": "string"
+                    },
+                    {
+                        "name": "identity",
+                        "type": "string"
+                    },
+                    {
+                        "name": "verified_by",
+                        "type": "string"
+                    },
+                    {
+                        "name": "confidence",
+                        "type": "string"
+                    },
+                    {
+                        "name": "first_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    }
+                ],
+                "mmdb": [
+                    {
+                        "name": "provider",
+                        "type": "string"
+                    },
+                    {
+                        "name": "agents",
+                        "type": "string"
+                    },
+                    {
+                        "name": "categories",
+                        "type": "string"
+                    },
+                    {
+                        "name": "identity",
+                        "type": "string"
+                    },
+                    {
+                        "name": "verified_by",
+                        "type": "string"
+                    },
+                    {
+                        "name": "confidence",
+                        "type": "string"
+                    },
+                    {
+                        "name": "first_seen",
+                        "type": "date"
+                    },
+                    {
+                        "name": "last_seen",
+                        "type": "date"
+                    }
+                ]
+            }
         }
     ]
 }

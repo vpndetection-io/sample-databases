@@ -24,6 +24,7 @@
 | [Public Proxy IP 30d](pubproxy-ip-30d/) | Addresses where public proxies listened or their traffic exited in the last 30 days, each flagged entry, exit or both. | CSV, MMDB | Daily |
 | [Public Proxy IP 60d](pubproxy-ip-60d/) | Addresses where public proxies listened or their traffic exited in the last 60 days, each flagged entry, exit or both. | CSV, MMDB | Daily |
 | [Public Proxy IP 90d](pubproxy-ip-90d/) | Addresses where public proxies listened or their traffic exited in the last 90 days, each flagged entry, exit or both. | CSV, MMDB | Daily |
+| [Bot IP](bot-ip/) | IP ranges bots use, from search and AI crawlers to monitors, scanners and webhook senders, each with its operator, its bots, what they do and whether the operator vouches for the address. | CSV, MMDB | Daily |
 
 ## Reading a sample
 

@@ -30,7 +30,7 @@ For letting a verified crawler through bot rules by the operator that vouches fo
 | --- | --- | --- | --- |
 | `start_ip` | `ipaddress` | Start IP of the IP range. | `1.14.182.182` |
 | `end_ip` | `ipaddress` | End IP of the IP range. | `1.14.182.182` |
-| `provider` | `string` | The bot operator's ID in the bot_provider catalog, empty where no operator is known. | `amazon` |
+| `provider` | `string` | The bot operator's ID in the bot_provider catalog, or for an unverified range the operator its claim named, empty where no operator is known. | `amazon` |
 | `agents` | `string` | The bots the range serves, or for an unverified one the bots it claimed to be, as their user agents name them, joined by \|. | `Amzn-User` |
 | `categories` | `string` | What those bots do, joined by \|, empty where unknown. | `ai_assistant` |
 | `identity` | `string` | How we know the range is a bot's. | `undeclared` |
@@ -82,7 +82,7 @@ Each record is looked up by IP address and holds:
 
 | Name | Type | Description | Example |
 | --- | --- | --- | --- |
-| `provider` | `string` | The bot operator's ID in the bot_provider catalog, empty where no operator is known. | `amazon` |
+| `provider` | `string` | The bot operator's ID in the bot_provider catalog, or for an unverified range the operator its claim named, empty where no operator is known. | `amazon` |
 | `agents` | `string` | The bots the range serves, or for an unverified one the bots it claimed to be, as their user agents name them, joined by \|. | `Amzn-User` |
 | `categories` | `string` | What those bots do, joined by \|, empty where unknown. | `ai_assistant` |
 | `identity` | `string` | How we know the range is a bot's. | `undeclared` |

@@ -7,8 +7,8 @@ IP ranges of privacy relays, such as iCloud Private Relay, and of enterprise web
 | ID | `relay_ip_v1` |
 | Formats | `csvgz`, `mmdb` |
 | Update frequency | Daily |
-| Full database | 176,223 entries, 1.13 MB as CSV and 1.06 MB as MMDB, on 2026-11-17 |
-| This sample | 100 rows from the 2026-11-17 build |
+| Full database | 185,612 entries, 1.20 MB as CSV and 1.15 MB as MMDB, on 2026-11-24 |
+| This sample | 100 rows from the 2026-11-24 build |
 | License | This sample and the full database: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | Docs | [docs.vpndetection.io/database/relay-ip/relay-ip](https://docs.vpndetection.io/database/relay-ip/relay-ip?utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=relay-ip) |
 
@@ -34,7 +34,7 @@ Free under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), like
 | `end_ip` | `ipaddress` | End IP of the IP range. | `3.0.6.66` |
 | `provider` | `string` | Relay/proxy provider's unique ID. | `cisco_secure_access` |
 | `confidence` | `string` | Confidence of the correctness of this observation. | `medium` |
-| `last_seen` | `date` | Last time this observation was made. | `2026-11-06` |
+| `last_seen` | `date` | Last time this observation was made. | `2026-11-20` |
 
 ### MMDB (`mmdb`)
 
@@ -44,7 +44,7 @@ Each record is looked up by IP address and holds:
 | --- | --- | --- | --- |
 | `provider` | `string` | Relay/proxy provider's unique ID. | `cisco_secure_access` |
 | `confidence` | `string` | Confidence of the correctness of this observation. | `medium` |
-| `last_seen` | `date` | Last time this observation was made. | `2026-11-06` |
+| `last_seen` | `date` | Last time this observation was made. | `2026-11-20` |
 
 ## The full database
 

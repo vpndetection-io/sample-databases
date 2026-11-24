@@ -57,6 +57,6 @@ The samples are licensed under [CC BY-SA 4.0](LICENSE): credit VPNDetection with
 
 ## About VPNDetection
 
-[<img src="https://s3.vpndetection.io/vpndetection-public/brand/mark.svg" alt="VPNDetection" height="64"/>](https://vpndetection.io/?utm_source=github&utm_medium=referral&utm_campaign=sample-databases)
+[<picture><source media="(prefers-color-scheme: dark)" srcset="https://s3.vpndetection.io/vpndetection-public/brand/logo-dark.svg"><img src="https://s3.vpndetection.io/vpndetection-public/brand/logo.svg" alt="VPNDetection" height="40"/></picture>](https://vpndetection.io/?utm_source=github&utm_medium=referral&utm_campaign=sample-databases)
 
 VPN Detection API: Accurate anonymity detection identifying VPNs, residential proxies, hosting servers, Tor nodes, CDNs, relays and more.

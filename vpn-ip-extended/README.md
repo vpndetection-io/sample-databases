@@ -7,8 +7,8 @@ VPN IP ranges with provider attribution, confidence and detection method.
 | ID | `vpn_ip_extended_v1` |
 | Formats | `csvgz`, `mmdb` |
 | Update frequency | Daily |
-| Full database | 15,516,836 entries, 111 MB as CSV and 140 MB as MMDB, on 2026-11-17 |
-| This sample | 100 rows from the 2026-11-17 build |
+| Full database | 16,445,980 entries, 118 MB as CSV and 145 MB as MMDB, on 2026-11-24 |
+| This sample | 100 rows from the 2026-11-24 build |
 | License | This sample: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The full database: licensed per database, [request an evaluation](https://vpndetection.io/contact?purpose=evaluation&subject=VPN+IP+Extended+Database+evaluation&products=VPN+IP+Extended+Database&utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=vpn-ip-extended) |
 | Docs | [docs.vpndetection.io/database/vpn-ip/vpn-ip-extended](https://docs.vpndetection.io/database/vpn-ip/vpn-ip-extended?utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=vpn-ip-extended) |
 
@@ -30,10 +30,10 @@ VPN IP ranges with provider attribution, confidence and detection method.
 | --- | --- | --- | --- |
 | `start_ip` | `ipaddress` | Start IP of the IP range. | `1.0.7.231` |
 | `end_ip` | `ipaddress` | End IP of the IP range. | `1.0.7.231` |
-| `provider` | `string` | Commercial VPN provider's unique ID. Empty when the range is confirmed VPN infrastructure we have not yet attributed to a named operator. | `watchguard` |
+| `provider` | `string` | Commercial VPN provider's unique ID. Empty when the range is confirmed VPN infrastructure we have not yet attributed to a named operator. | `windscribe` |
 | `method` | `string` | How this range was established. Values are listed below. | `scan` |
 | `confidence` | `string` | Confidence of the correctness of this observation. | `low` |
-| `last_seen` | `date` | Last time this observation was made. | `2026-11-13` |
+| `last_seen` | `date` | Last time this observation was made. | `2026-11-20` |
 
 `method` is one of:
 
@@ -50,10 +50,10 @@ Each record is looked up by IP address and holds:
 
 | Name | Type | Description | Example |
 | --- | --- | --- | --- |
-| `provider` | `string` | Commercial VPN provider's unique ID. Empty when the range is confirmed VPN infrastructure we have not yet attributed to a named operator. | `watchguard` |
+| `provider` | `string` | Commercial VPN provider's unique ID. Empty when the range is confirmed VPN infrastructure we have not yet attributed to a named operator. | `windscribe` |
 | `method` | `string` | How this range was established. Values are listed below. | `scan` |
 | `confidence` | `string` | Confidence of the correctness of this observation. | `low` |
-| `last_seen` | `date` | Last time this observation was made. | `2026-11-13` |
+| `last_seen` | `date` | Last time this observation was made. | `2026-11-20` |
 
 ## The full database
 

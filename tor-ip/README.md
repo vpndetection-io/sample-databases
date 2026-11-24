@@ -7,8 +7,8 @@ Tor node IP ranges.
 | ID | `tor_ip_v1` |
 | Formats | `csvgz`, `mmdb` |
 | Update frequency | Daily |
-| Full database | 13,825 entries, 113 KB as CSV and 936 KB as MMDB, on 2026-11-17 |
-| This sample | 100 rows from the 2026-11-17 build |
+| Full database | 13,509 entries, 110 KB as CSV and 914 KB as MMDB, on 2026-11-24 |
+| This sample | 100 rows from the 2026-11-24 build |
 | License | This sample and the full database: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | Docs | [docs.vpndetection.io/database/tor-ip](https://docs.vpndetection.io/database/tor-ip?utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=tor-ip) |
 
@@ -33,7 +33,7 @@ Free under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), like
 | `start_ip` | `ipaddress` | Start IP of the Tor node IP range. | `1.34.44.234` |
 | `end_ip` | `ipaddress` | End IP of the Tor node IP range. | `1.34.44.234` |
 | `confidence` | `string` | Confidence of the correctness of this observation. | `high` |
-| `last_seen` | `date` | Last time this observation was made. | `2026-11-17` |
+| `last_seen` | `date` | Last time this observation was made. | `2026-11-24` |
 
 ### MMDB (`mmdb`)
 
@@ -42,7 +42,7 @@ Each record is looked up by IP address and holds:
 | Name | Type | Description | Example |
 | --- | --- | --- | --- |
 | `confidence` | `string` | Confidence of the correctness of this observation. | `high` |
-| `last_seen` | `date` | Last time this observation was made. | `2026-11-17` |
+| `last_seen` | `date` | Last time this observation was made. | `2026-11-24` |
 
 ## The full database
 

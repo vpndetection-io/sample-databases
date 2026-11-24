@@ -7,8 +7,8 @@ IP ranges observed as VPN infrastructure.
 | ID | `vpn_ip_v1` |
 | Formats | `csvgz`, `mmdb` |
 | Update frequency | Daily |
-| Full database | 14,895,525 entries, 103 MB as CSV and 86.8 MB as MMDB, on 2026-11-17 |
-| This sample | 100 rows from the 2026-11-17 build |
+| Full database | 15,809,810 entries, 109 MB as CSV and 90.2 MB as MMDB, on 2026-11-24 |
+| This sample | 100 rows from the 2026-11-24 build |
 | License | This sample: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The full database: licensed per database, [request an evaluation](https://vpndetection.io/contact?purpose=evaluation&subject=VPN+IP+Database+evaluation&products=VPN+IP+Database&utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=vpn-ip) |
 | Docs | [docs.vpndetection.io/database/vpn-ip/vpn-ip](https://docs.vpndetection.io/database/vpn-ip/vpn-ip?utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=vpn-ip) |
 
@@ -30,9 +30,9 @@ IP ranges observed as VPN infrastructure.
 | --- | --- | --- | --- |
 | `start_ip` | `ipaddress` | Start IP of the IP range. | `1.0.7.231` |
 | `end_ip` | `ipaddress` | End IP of the IP range. | `1.0.7.231` |
-| `provider` | `string` | Commercial VPN provider's unique ID. | `psiphon` |
+| `provider` | `string` | Commercial VPN provider's unique ID. | `ikuai8` |
 | `confidence` | `string` | Confidence of the correctness of this observation. | `low` |
-| `last_seen` | `date` | Last time this observation was made. | `2026-11-13` |
+| `last_seen` | `date` | Last time this observation was made. | `2026-11-20` |
 
 ### MMDB (`mmdb`)
 
@@ -40,9 +40,9 @@ Each record is looked up by IP address and holds:
 
 | Name | Type | Description | Example |
 | --- | --- | --- | --- |
-| `provider` | `string` | Commercial VPN provider's unique ID. | `psiphon` |
+| `provider` | `string` | Commercial VPN provider's unique ID. | `ikuai8` |
 | `confidence` | `string` | Confidence of the correctness of this observation. | `low` |
-| `last_seen` | `date` | Last time this observation was made. | `2026-11-13` |
+| `last_seen` | `date` | Last time this observation was made. | `2026-11-20` |
 
 ## The full database
 

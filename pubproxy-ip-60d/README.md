@@ -7,8 +7,8 @@ Addresses where public proxies listened or their traffic exited in the last 60 d
 | ID | `pubproxy_ip_60d_v1` |
 | Formats | `csvgz`, `mmdb` |
 | Update frequency | Daily |
-| Full database | 40,827 entries, 368 KB as CSV and 3.46 MB as MMDB, on 2026-11-17 |
-| This sample | 100 rows from the 2026-11-17 build |
+| Full database | 44,452 entries, 404 KB as CSV and 3.94 MB as MMDB, on 2026-11-24 |
+| This sample | 100 rows from the 2026-11-24 build |
 | License | This sample: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The full database: licensed per database, [request an evaluation](https://vpndetection.io/contact?purpose=evaluation&subject=Public+Proxy+IP+Database+evaluation&products=Public+Proxy+IP+Database&utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=pubproxy-ip-60d) |
 | Docs | [docs.vpndetection.io/database/pubproxy-ip/pubproxy-ip-60d](https://docs.vpndetection.io/database/pubproxy-ip/pubproxy-ip-60d?utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=pubproxy-ip-60d) |
 
@@ -45,8 +45,8 @@ Public Proxy IP comes in six windows, 1, 7, 14, 30, 60 and 90 days. A shorter on
 | `num_ports` | `integer` | Number of distinct ports a public proxy listened on at this address; 0 when it is only an exit, or its port is not known. | `1` |
 | `num_proxies` | `integer` | Number of distinct public proxies whose traffic left from this address; 0 when it is only an entry. | `2` |
 | `country` | `string` | ISO 3166-1 alpha-2 country code of the IP address. | `TH` |
-| `last_seen` | `date` | Last time within the last 60 days this address was seen at either end of a public proxy. | `2026-11-16` |
-| `last_usable` | `date` | Last time within the last 60 days a request through a public proxy was answered with this address at either end; empty when none was. | `2026-11-16` |
+| `last_seen` | `date` | Last time within the last 60 days this address was seen at either end of a public proxy. | `2026-11-23` |
+| `last_usable` | `date` | Last time within the last 60 days a request through a public proxy was answered with this address at either end; empty when none was. | `2026-11-23` |
 
 `protocols` is one of:
 
@@ -69,8 +69,8 @@ Each record is looked up by IP address and holds:
 | `num_ports` | `integer` | Number of distinct ports a public proxy listened on at this address; 0 when it is only an exit, or its port is not known. | `1` |
 | `num_proxies` | `integer` | Number of distinct public proxies whose traffic left from this address; 0 when it is only an entry. | `2` |
 | `country` | `string` | ISO 3166-1 alpha-2 country code of the IP address. | `TH` |
-| `last_seen` | `date` | Last time within the last 60 days this address was seen at either end of a public proxy. | `2026-11-16` |
-| `last_usable` | `date` | Last time within the last 60 days a request through a public proxy was answered with this address at either end; empty when none was. | `2026-11-16` |
+| `last_seen` | `date` | Last time within the last 60 days this address was seen at either end of a public proxy. | `2026-11-23` |
+| `last_usable` | `date` | Last time within the last 60 days a request through a public proxy was answered with this address at either end; empty when none was. | `2026-11-23` |
 
 ## The full database
 

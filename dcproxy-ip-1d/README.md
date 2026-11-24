@@ -7,8 +7,8 @@ Datacenter-hosted proxy IPs seen in the last 24 hours, with provider attribution
 | ID | `dcproxy_ip_1d_v1` |
 | Formats | `csvgz`, `mmdb` |
 | Update frequency | Daily |
-| Full database | 682,213 entries, 1.88 MB as CSV and 693 KB as MMDB, on 2026-11-17 |
-| This sample | 100 rows from the 2026-11-17 build |
+| Full database | 714,798 entries, 1.96 MB as CSV and 687 KB as MMDB, on 2026-11-24 |
+| This sample | 100 rows from the 2026-11-24 build |
 | License | This sample: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The full database: licensed per database, [request an evaluation](https://vpndetection.io/contact?purpose=evaluation&subject=Datacenter+Proxy+IP+Database+evaluation&products=Datacenter+Proxy+IP+Database&utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=dcproxy-ip-1d) |
 | Docs | [docs.vpndetection.io/database/dcproxy-ip/dcproxy-ip-1d](https://docs.vpndetection.io/database/dcproxy-ip/dcproxy-ip-1d?utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=dcproxy-ip-1d) |
 
@@ -30,8 +30,8 @@ Datacenter-hosted proxy IPs seen in the last 24 hours, with provider attribution
 | --- | --- | --- | --- |
 | `ip` | `ipaddress` | IP address a datacenter proxy service sells or runs on. | `1.0.168.65` |
 | `provider` | `string` | Datacenter proxy provider's unique ID. | `floppydata` |
-| `first_seen` | `date` | First time within this window this IP was seen as a datacenter proxy address. | `2026-11-16` |
-| `last_seen` | `date` | Last time within this window this IP was seen as a datacenter proxy address. | `2026-11-16` |
+| `first_seen` | `date` | First time within this window this IP was seen as a datacenter proxy address. | `2026-11-23` |
+| `last_seen` | `date` | Last time within this window this IP was seen as a datacenter proxy address. | `2026-11-23` |
 | `hits` | `integer` | Sightings within this window: one per time it was seen as an exit, or one a day as an address of a proxy server or of a proxy company's own range. | `1` |
 | `hits_days_pct` | `float` | Percent of days within this window on which this IP was seen as a datacenter proxy address. | `100` |
 | `providers_num` | `integer` | Number of distinct providers attributing this IP within this window. | `1` |
@@ -43,8 +43,8 @@ Each record is looked up by IP address and holds:
 | Name | Type | Description | Example |
 | --- | --- | --- | --- |
 | `provider` | `string` | Datacenter proxy provider's unique ID. | `floppydata` |
-| `first_seen` | `date` | First time within this window this IP was seen as a datacenter proxy address. | `2026-11-16` |
-| `last_seen` | `date` | Last time within this window this IP was seen as a datacenter proxy address. | `2026-11-16` |
+| `first_seen` | `date` | First time within this window this IP was seen as a datacenter proxy address. | `2026-11-23` |
+| `last_seen` | `date` | Last time within this window this IP was seen as a datacenter proxy address. | `2026-11-23` |
 | `hits` | `integer` | Sightings within this window: one per time it was seen as an exit, or one a day as an address of a proxy server or of a proxy company's own range. | `1` |
 | `hits_days_pct` | `float` | Percent of days within this window on which this IP was seen as a datacenter proxy address. | `100` |
 | `providers_num` | `integer` | Number of distinct providers attributing this IP within this window. | `1` |

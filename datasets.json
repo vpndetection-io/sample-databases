@@ -15,7 +15,7 @@
             "docs": "https://docs.vpndetection.io/database/vpn-ip/vpn-ip",
             "page": "https://vpndetection.io/databases/vpn-ip",
             "sample": {
-                "cut": "2026-11-17",
+                "cut": "2026-11-24",
                 "rows": 100,
                 "files": {
                     "csv": "vpn-ip/vpn_ip_v1.sample.csv",
@@ -24,10 +24,10 @@
                 }
             },
             "database": {
-                "entries": 14895525,
+                "entries": 15809810,
                 "size": {
-                    "csvgz": 107835621,
-                    "mmdb": 90969684
+                    "csvgz": 114394854,
+                    "mmdb": 94600149
                 }
             },
             "columns": {
@@ -83,7 +83,7 @@
             "docs": "https://docs.vpndetection.io/database/vpn-ip/vpn-ip-extended",
             "page": "https://vpndetection.io/databases/vpn-ip-extended",
             "sample": {
-                "cut": "2026-11-17",
+                "cut": "2026-11-24",
                 "rows": 100,
                 "files": {
                     "csv": "vpn-ip-extended/vpn_ip_extended_v1.sample.csv",
@@ -92,10 +92,10 @@
                 }
             },
             "database": {
-                "entries": 15516836,
+                "entries": 16445980,
                 "size": {
-                    "csvgz": 116623631,
-                    "mmdb": 146327520
+                    "csvgz": 123499327,
+                    "mmdb": 151701642
                 }
             },
             "columns": {
@@ -159,7 +159,7 @@
             "docs": "https://docs.vpndetection.io/database/hosting-ip/hosting-ip",
             "page": "https://vpndetection.io/databases/hosting-ip",
             "sample": {
-                "cut": "2026-11-17",
+                "cut": "2026-11-24",
                 "rows": 100,
                 "files": {
                     "csv": "hosting-ip/hosting_ip_v1.sample.csv",
@@ -168,10 +168,10 @@
                 }
             },
             "database": {
-                "entries": 483920,
+                "entries": 483899,
                 "size": {
-                    "csvgz": 3444592,
-                    "mmdb": 5955814
+                    "csvgz": 3465075,
+                    "mmdb": 5927338
                 }
             },
             "columns": {
@@ -227,7 +227,7 @@
             "docs": "https://docs.vpndetection.io/database/tor-ip",
             "page": "https://vpndetection.io/databases/tor-ip",
             "sample": {
-                "cut": "2026-11-17",
+                "cut": "2026-11-24",
                 "rows": 100,
                 "files": {
                     "csv": "tor-ip/tor_ip_v1.sample.csv",
@@ -236,10 +236,10 @@
                 }
             },
             "database": {
-                "entries": 13825,
+                "entries": 13509,
                 "size": {
-                    "csvgz": 116012,
-                    "mmdb": 958356
+                    "csvgz": 113148,
+                    "mmdb": 935934
                 }
             },
             "columns": {
@@ -287,7 +287,7 @@
             "docs": "https://docs.vpndetection.io/database/relay-ip/relay-ip",
             "page": "https://vpndetection.io/databases/relay-ip",
             "sample": {
-                "cut": "2026-11-17",
+                "cut": "2026-11-24",
                 "rows": 100,
                 "files": {
                     "csv": "relay-ip/relay_ip_v1.sample.csv",
@@ -296,10 +296,10 @@
                 }
             },
             "database": {
-                "entries": 176223,
+                "entries": 185612,
                 "size": {
-                    "csvgz": 1186493,
-                    "mmdb": 1107705
+                    "csvgz": 1259948,
+                    "mmdb": 1211017
                 }
             },
             "columns": {
@@ -355,7 +355,7 @@
             "docs": "https://docs.vpndetection.io/database/cdn-ip/cdn-ip",
             "page": "https://vpndetection.io/databases/cdn-ip",
             "sample": {
-                "cut": "2026-11-17",
+                "cut": "2026-11-24",
                 "rows": 100,
                 "files": {
                     "csv": "cdn-ip/cdn_ip_v1.sample.csv",
@@ -364,10 +364,10 @@
                 }
             },
             "database": {
-                "entries": 153406,
+                "entries": 161132,
                 "size": {
-                    "csvgz": 982968,
-                    "mmdb": 1169629
+                    "csvgz": 1031348,
+                    "mmdb": 1236624
                 }
             },
             "columns": {
@@ -423,7 +423,7 @@
             "docs": "https://docs.vpndetection.io/database/dcproxy-ip/dcproxy-ip-1d",
             "page": "https://vpndetection.io/databases/datacenter-proxy-ip",
             "sample": {
-                "cut": "2026-11-17",
+                "cut": "2026-11-24",
                 "rows": 100,
                 "files": {
                     "csv": "dcproxy-ip-1d/dcproxy_ip_1d_v1.sample.csv",
@@ -432,10 +432,10 @@
                 }
             },
             "database": {
-                "entries": 682213,
+                "entries": 714798,
                 "size": {
-                    "csvgz": 1966186,
-                    "mmdb": 709170
+                    "csvgz": 2054127,
+                    "mmdb": 703288
                 }
             },
             "columns": {
@@ -511,7 +511,7 @@
             "docs": "https://docs.vpndetection.io/database/dcproxy-ip/dcproxy-ip-7d",
             "page": "https://vpndetection.io/databases/datacenter-proxy-ip",
             "sample": {
-                "cut": "2026-11-17",
+                "cut": "2026-11-24",
                 "rows": 100,
                 "files": {
                     "csv": "dcproxy-ip-7d/dcproxy_ip_7d_v1.sample.csv",
@@ -520,10 +520,10 @@
                 }
             },
             "database": {
-                "entries": 767914,
+                "entries": 844183,
                 "size": {
-                    "csvgz": 2579458,
-                    "mmdb": 2429039
+                    "csvgz": 2840409,
+                    "mmdb": 2653070
                 }
             },
             "columns": {
@@ -599,7 +599,7 @@
             "docs": "https://docs.vpndetection.io/database/dcproxy-ip/dcproxy-ip-14d",
             "page": "https://vpndetection.io/databases/datacenter-proxy-ip",
             "sample": {
-                "cut": "2026-11-17",
+                "cut": "2026-11-24",
                 "rows": 100,
                 "files": {
                     "csv": "dcproxy-ip-14d/dcproxy_ip_14d_v1.sample.csv",
@@ -608,10 +608,10 @@
                 }
             },
             "database": {
-                "entries": 866443,
+                "entries": 915081,
                 "size": {
-                    "csvgz": 3226500,
-                    "mmdb": 3611771
+                    "csvgz": 3378647,
+                    "mmdb": 4314942
                 }
             },
             "columns": {
@@ -687,7 +687,7 @@
             "docs": "https://docs.vpndetection.io/database/dcproxy-ip/dcproxy-ip-30d",
             "page": "https://vpndetection.io/databases/datacenter-proxy-ip",
             "sample": {
-                "cut": "2026-11-17",
+                "cut": "2026-11-24",
                 "rows": 100,
                 "files": {
                     "csv": "dcproxy-ip-30d/dcproxy_ip_30d_v1.sample.csv",
@@ -696,10 +696,10 @@
                 }
             },
             "database": {
-                "entries": 1078648,
+                "entries": 1148649,
                 "size": {
-                    "csvgz": 5103039,
-                    "mmdb": 8646120
+                    "csvgz": 5210213,
+                    "mmdb": 8449414
                 }
             },
             "columns": {
@@ -775,7 +775,7 @@
             "docs": "https://docs.vpndetection.io/database/dcproxy-ip/dcproxy-ip-60d",
             "page": "https://vpndetection.io/databases/datacenter-proxy-ip",
             "sample": {
-                "cut": "2026-11-17",
+                "cut": "2026-11-24",
                 "rows": 100,
                 "files": {
                     "csv": "dcproxy-ip-60d/dcproxy_ip_60d_v1.sample.csv",
@@ -784,10 +784,10 @@
                 }
             },
             "database": {
-                "entries": 1277615,
+                "entries": 1345003,
                 "size": {
-                    "csvgz": 6903131,
-                    "mmdb": 15603596
+                    "csvgz": 7085950,
+                    "mmdb": 15928379
                 }
             },
             "columns": {
@@ -863,7 +863,7 @@
             "docs": "https://docs.vpndetection.io/database/dcproxy-ip/dcproxy-ip-90d",
             "page": "https://vpndetection.io/databases/datacenter-proxy-ip",
             "sample": {
-                "cut": "2026-11-17",
+                "cut": "2026-11-24",
                 "rows": 100,
                 "files": {
                     "csv": "dcproxy-ip-90d/dcproxy_ip_90d_v1.sample.csv",
@@ -872,10 +872,10 @@
                 }
             },
             "database": {
-                "entries": 1380411,
+                "entries": 1460185,
                 "size": {
-                    "csvgz": 7864673,
-                    "mmdb": 20729727
+                    "csvgz": 8152153,
+                    "mmdb": 21169209
                 }
             },
             "columns": {
@@ -951,7 +951,7 @@
             "docs": "https://docs.vpndetection.io/database/pubproxy-ip/pubproxy-ip-1d",
             "page": "https://vpndetection.io/databases/public-proxy-ip",
             "sample": {
-                "cut": "2026-11-17",
+                "cut": "2026-11-24",
                 "rows": 100,
                 "files": {
                     "csv": "pubproxy-ip-1d/pubproxy_ip_1d_v1.sample.csv",
@@ -960,10 +960,10 @@
                 }
             },
             "database": {
-                "entries": 16501,
+                "entries": 18166,
                 "size": {
-                    "csvgz": 120484,
-                    "mmdb": 897949
+                    "csvgz": 132952,
+                    "mmdb": 1019724
                 }
             },
             "columns": {
@@ -1055,7 +1055,7 @@
             "docs": "https://docs.vpndetection.io/database/pubproxy-ip/pubproxy-ip-7d",
             "page": "https://vpndetection.io/databases/public-proxy-ip",
             "sample": {
-                "cut": "2026-11-17",
+                "cut": "2026-11-24",
                 "rows": 100,
                 "files": {
                     "csv": "pubproxy-ip-7d/pubproxy_ip_7d_v1.sample.csv",
@@ -1064,10 +1064,10 @@
                 }
             },
             "database": {
-                "entries": 23740,
+                "entries": 23927,
                 "size": {
-                    "csvgz": 193273,
-                    "mmdb": 1673983
+                    "csvgz": 191498,
+                    "mmdb": 1629420
                 }
             },
             "columns": {
@@ -1159,7 +1159,7 @@
             "docs": "https://docs.vpndetection.io/database/pubproxy-ip/pubproxy-ip-14d",
             "page": "https://vpndetection.io/databases/public-proxy-ip",
             "sample": {
-                "cut": "2026-11-17",
+                "cut": "2026-11-24",
                 "rows": 100,
                 "files": {
                     "csv": "pubproxy-ip-14d/pubproxy_ip_14d_v1.sample.csv",
@@ -1168,10 +1168,10 @@
                 }
             },
             "database": {
-                "entries": 28628,
+                "entries": 28793,
                 "size": {
-                    "csvgz": 246255,
-                    "mmdb": 2285426
+                    "csvgz": 245433,
+                    "mmdb": 2297622
                 }
             },
             "columns": {
@@ -1263,7 +1263,7 @@
             "docs": "https://docs.vpndetection.io/database/pubproxy-ip/pubproxy-ip-30d",
             "page": "https://vpndetection.io/databases/public-proxy-ip",
             "sample": {
-                "cut": "2026-11-17",
+                "cut": "2026-11-24",
                 "rows": 100,
                 "files": {
                     "csv": "pubproxy-ip-30d/pubproxy_ip_30d_v1.sample.csv",
@@ -1272,10 +1272,10 @@
                 }
             },
             "database": {
-                "entries": 38592,
+                "entries": 38346,
                 "size": {
-                    "csvgz": 354042,
-                    "mmdb": 3468548
+                    "csvgz": 352759,
+                    "mmdb": 3552339
                 }
             },
             "columns": {
@@ -1367,7 +1367,7 @@
             "docs": "https://docs.vpndetection.io/database/pubproxy-ip/pubproxy-ip-60d",
             "page": "https://vpndetection.io/databases/public-proxy-ip",
             "sample": {
-                "cut": "2026-11-17",
+                "cut": "2026-11-24",
                 "rows": 100,
                 "files": {
                     "csv": "pubproxy-ip-60d/pubproxy_ip_60d_v1.sample.csv",
@@ -1376,10 +1376,10 @@
                 }
             },
             "database": {
-                "entries": 40827,
+                "entries": 44452,
                 "size": {
-                    "csvgz": 376942,
-                    "mmdb": 3624869
+                    "csvgz": 414002,
+                    "mmdb": 4132287
                 }
             },
             "columns": {
@@ -1471,7 +1471,7 @@
             "docs": "https://docs.vpndetection.io/database/pubproxy-ip/pubproxy-ip-90d",
             "page": "https://vpndetection.io/databases/public-proxy-ip",
             "sample": {
-                "cut": "2026-11-17",
+                "cut": "2026-11-24",
                 "rows": 100,
                 "files": {
                     "csv": "pubproxy-ip-90d/pubproxy_ip_90d_v1.sample.csv",
@@ -1480,10 +1480,10 @@
                 }
             },
             "database": {
-                "entries": 43378,
+                "entries": 46791,
                 "size": {
-                    "csvgz": 400075,
-                    "mmdb": 3781948
+                    "csvgz": 436382,
+                    "mmdb": 4281911
                 }
             },
             "columns": {

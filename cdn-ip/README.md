@@ -7,8 +7,8 @@ IP ranges operated by content delivery networks.
 | ID | `cdn_ip_v1` |
 | Formats | `csvgz`, `mmdb` |
 | Update frequency | Daily |
-| Full database | 153,406 entries, 960 KB as CSV and 1.12 MB as MMDB, on 2026-11-17 |
-| This sample | 100 rows from the 2026-11-17 build |
+| Full database | 161,132 entries, 1007 KB as CSV and 1.18 MB as MMDB, on 2026-11-24 |
+| This sample | 100 rows from the 2026-11-24 build |
 | License | This sample: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The full database: licensed per database, [request an evaluation](https://vpndetection.io/contact?purpose=evaluation&subject=CDN+IP+Database+evaluation&products=CDN+IP+Database&utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=cdn-ip) |
 | Docs | [docs.vpndetection.io/database/cdn-ip/cdn-ip](https://docs.vpndetection.io/database/cdn-ip/cdn-ip?utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=cdn-ip) |
 
@@ -32,7 +32,7 @@ IP ranges operated by content delivery networks.
 | `end_ip` | `ipaddress` | End IP of the IP range. | `1.0.0.255` |
 | `provider` | `string` | CDN provider's unique ID. | `cloudflare` |
 | `confidence` | `string` | Confidence of the correctness of this observation. | `high` |
-| `last_seen` | `date` | Last time this observation was made. | `2026-11-17` |
+| `last_seen` | `date` | Last time this observation was made. | `2026-11-24` |
 
 ### MMDB (`mmdb`)
 
@@ -42,7 +42,7 @@ Each record is looked up by IP address and holds:
 | --- | --- | --- | --- |
 | `provider` | `string` | CDN provider's unique ID. | `cloudflare` |
 | `confidence` | `string` | Confidence of the correctness of this observation. | `high` |
-| `last_seen` | `date` | Last time this observation was made. | `2026-11-17` |
+| `last_seen` | `date` | Last time this observation was made. | `2026-11-24` |
 
 ## The full database
 

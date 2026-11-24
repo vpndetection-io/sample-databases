@@ -7,8 +7,8 @@ IP ranges belonging to hosting and cloud providers.
 | ID | `hosting_ip_v1` |
 | Formats | `csvgz`, `mmdb` |
 | Update frequency | Daily |
-| Full database | 483,920 entries, 3.29 MB as CSV and 5.68 MB as MMDB, on 2026-11-17 |
-| This sample | 100 rows from the 2026-11-17 build |
+| Full database | 483,899 entries, 3.30 MB as CSV and 5.65 MB as MMDB, on 2026-11-24 |
+| This sample | 100 rows from the 2026-11-24 build |
 | License | This sample: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The full database: licensed per database, [request an evaluation](https://vpndetection.io/contact?purpose=evaluation&subject=Hosting+IP+Database+evaluation&products=Hosting+IP+Database&utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=hosting-ip) |
 | Docs | [docs.vpndetection.io/database/hosting-ip/hosting-ip](https://docs.vpndetection.io/database/hosting-ip/hosting-ip?utm_source=github&utm_medium=referral&utm_campaign=sample-databases&utm_content=hosting-ip) |
 
@@ -32,7 +32,7 @@ IP ranges belonging to hosting and cloud providers.
 | `end_ip` | `ipaddress` | End IP of the IP range. | `1.0.0.255` |
 | `provider` | `string` | Hosting provider's unique ID. | `aws` |
 | `confidence` | `string` | Confidence of the correctness of this observation. | `medium` |
-| `last_seen` | `date` | Last time this observation was made. | `2026-11-16` |
+| `last_seen` | `date` | Last time this observation was made. | `2026-11-23` |
 
 ### MMDB (`mmdb`)
 
@@ -42,7 +42,7 @@ Each record is looked up by IP address and holds:
 | --- | --- | --- | --- |
 | `provider` | `string` | Hosting provider's unique ID. | `aws` |
 | `confidence` | `string` | Confidence of the correctness of this observation. | `medium` |
-| `last_seen` | `date` | Last time this observation was made. | `2026-11-16` |
+| `last_seen` | `date` | Last time this observation was made. | `2026-11-23` |
 
 ## The full database
 
